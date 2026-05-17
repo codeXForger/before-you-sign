@@ -1,0 +1,43 @@
+name: Bug report
+description: Something isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **Never paste your API key or the contents of a private agreement.**
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, and what went wrong?
+      placeholder: I uploaded a PDF and clicked Analyze, then saw...
+    validations:
+      required: true
+  - type: input
+    id: error-message
+    attributes:
+      label: Exact error message
+      description: The message shown in the UI (it usually names the failing field).
+      placeholder: 'Model returned an analysis in an unexpected shape: risks.0.quote: ...'
+  - type: input
+    id: model
+    attributes:
+      label: Model used
+      placeholder: claude-opus-4-5
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where are you running it?
+      options:
+        - Local (npm run dev)
+        - Self-hosted production build
+        - Vercel
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Document type/size (no contents), browser, console errors, etc.

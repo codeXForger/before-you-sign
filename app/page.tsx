@@ -154,7 +154,9 @@ export default function Home() {
           Not legal advice. Always consult a qualified lawyer for important
           agreements. Open source ·{" "}
           <a
-            href="https://github.com/"
+            href="https://github.com/codeXForger/before-you-sign"
+            target="_blank"
+            rel="noopener noreferrer"
             className="underline hover:text-zinc-900 dark:hover:text-zinc-200"
           >
             GitHub
